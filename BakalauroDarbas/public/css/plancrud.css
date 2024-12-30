@@ -1,0 +1,274 @@
+body {
+    background-color: #e0e0e0;
+}
+
+.container {
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #666666;
+}
+
+.form-control {
+    font-size: 1rem;
+    color: #495057;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #80bdff;
+}
+
+p.form-control {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #495057;
+}
+
+strong {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333333;
+}
+
+button[type="submit"],
+a.btn-danger,
+a.btn-secondary {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+input[type="file"] {
+    border: 1px solid #ced4da;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    min-height: 200px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-row .col-md-6 {
+    flex: 1;
+}
+
+#dropzone-area {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#dropzone-area p {
+    margin: 0;
+}
+
+.file-preview {
+    margin-bottom: 10px;
+}
+
+.file-item video {
+    width: 100%;
+    max-width: 800px;
+    height: 375px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.file-item img {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.file-item i {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.atgal-button {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .input-group {
+        max-width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+    }
+
+    .table {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+
+    .pagination {
+        font-size: 12px;
+    }
+
+    .table td {
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    .form-row .col-md-6 {
+        flex: 1 1 100%;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+        padding: 8px; 
+    }
+
+    .form-row .col-md-6 .form-control {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .file-preview {
+        width: 100%;
+    }
+
+    .file-item {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .file-item video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .file-item img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .delete-icon {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .atgal-button {
+        width: 100%;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}

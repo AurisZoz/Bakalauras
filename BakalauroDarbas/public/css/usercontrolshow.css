@@ -1,0 +1,216 @@
+body {
+    background-color: #e0e0e0;
+}
+
+.container {
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user-info-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+button[type="submit"],
+button {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th, 
+.table td {
+    text-align: left;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table .btn {
+    width: auto;
+    height: 36px;
+    font-size: 14px;
+    padding: 6px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #ffc107;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.user-plans-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.user-plans-header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#searchForm {
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.input-group-text {
+    background-color: #ffffff;
+    border-right: 0;
+}
+
+.form-control {
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    color: #007bff;
+    border-radius: 5px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #e0e0e0;
+    color: #ccc;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .user-info-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .pagination {
+        font-size: 14px;
+    }
+
+    .table th, .table td {
+        padding: 6px; 
+        font-size: 12px; 
+    }
+
+    .table .btn {
+        padding: 5px 10px; 
+        font-size: 12px; 
+    }
+
+}
